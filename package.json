@@ -5,18 +5,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "globstar -- node --enable-source-maps --loader=ts-node/esm --test test/**/*.ts"
+    "test": "globstar -- node --enable-source-maps --loader=ts-node/esm --test test/**/*.ts",
+    "coverage": "globstar -- c8 --clean -r html -r text node --enable-source-maps --loader=ts-node/esm --test test/**/*.ts",
+    "show:coverage": "open-cli coverage/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "c8": "^8.0.0",
-    "clean-publish": "^4.2.0",
-    "depcheck": "^1.4.3",
-    "eslint": "^8.45.0",
     "globstar": "^1.0.0",
-    "prettier": "^3.0.0",
+    "open-cli": "^7.2.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   }
