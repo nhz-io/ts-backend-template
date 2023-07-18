@@ -1,0 +1,9 @@
+*.log
+.DS_Store
+.env.local
+.eslintcache
+.idea
+.vscode
+.nyc_output
+coverage
+node_modules
