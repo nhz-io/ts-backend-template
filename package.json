@@ -18,6 +18,7 @@
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
     "c8": "^8.0.0",
+    "conventional-changelog-cli": "^3.0.0",
     "globstar": "^1.0.0",
     "lefthook": "^1.4.7",
     "open-cli": "^7.2.0",
