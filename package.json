@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "globstar -- node --enable-source-maps --loader=ts-node/esm --test test/**/*.ts",
-    "coverage": "globstar -- c8 --clean -r html -r text node --enable-source-maps --loader=ts-node/esm --test test/**/*.ts",
+    "test": "globstar -- node --enable-source-maps --loader=ts-node/esm --test 'test/**/*.ts'",
+    "coverage": "globstar -- c8 --clean -r html -r text node --enable-source-maps --loader=ts-node/esm --test 'test/**/*.ts'",
     "show:coverage": "open-cli coverage/index.html"
   },
   "keywords": [],
