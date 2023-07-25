@@ -21,7 +21,7 @@ jobs:
         echo The PR was merged
         echo --------------------------------
         echo pulling tags ?
-        git pull ---tags --depth=2
+        git pull --tags --depth=2
         echo --------------------------------
         echo Those are 2 last git log entries
         git log -2 | cat
