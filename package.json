@@ -9,7 +9,9 @@
     "test": "globstar -- node --enable-source-maps --loader=ts-node/esm --test 'test/**/*.ts'",
     "coverage": "globstar -- c8 --clean -r html -r text node --enable-source-maps --loader=ts-node/esm --test 'test/**/*.ts'",
     "show:coverage": "open-cli coverage/index.html",
-    "lint": "echo linter not configured"
+    "lint": "echo linter not configured",
+    "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
+    "postversion": "git tag -d $(git tag --points-at HEAD)"
   },
   "keywords": [],
   "author": "",
