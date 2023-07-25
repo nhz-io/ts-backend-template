@@ -5,9 +5,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "init": "lefthook install -af",
     "test": "globstar -- node --enable-source-maps --loader=ts-node/esm --test 'test/**/*.ts'",
     "coverage": "globstar -- c8 --clean -r html -r text node --enable-source-maps --loader=ts-node/esm --test 'test/**/*.ts'",
-    "show:coverage": "open-cli coverage/index.html"
+    "show:coverage": "open-cli coverage/index.html",
+    "lint": "echo linter not configured",
+    "lefthook":"lefthook"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +18,7 @@
   "devDependencies": {
     "c8": "^8.0.0",
     "globstar": "^1.0.0",
+    "lefthook": "^1.4.7",
     "open-cli": "^7.2.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
