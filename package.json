@@ -5,17 +5,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "init": "lefthook install -af",
+    "init": "npm x -y -- lefthook install -af",
     "test": "globstar -- node --enable-source-maps --loader=ts-node/esm --test 'test/**/*.ts'",
     "coverage": "globstar -- c8 --clean -r html -r text node --enable-source-maps --loader=ts-node/esm --test 'test/**/*.ts'",
     "show:coverage": "open-cli coverage/index.html",
-    "lint": "echo linter not configured",
-    "lefthook":"lefthook"
+    "lint": "echo linter not configured"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
     "c8": "^8.0.0",
     "globstar": "^1.0.0",
     "lefthook": "^1.4.7",
