@@ -34,6 +34,11 @@
 #     "any.go":
 #       runner: go run
 
+prepare-commit-msg:
+  commands:
+    "commitlint conventional":
+      run: npm x -y -- commitlint --edit {1}
+
 pre-commit:
   parallel: true
   commands:
