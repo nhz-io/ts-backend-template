@@ -9,7 +9,9 @@
     "test": "globstar -- node --enable-source-maps --loader=ts-node/esm --test 'test/**/*.ts'",
     "coverage": "globstar -- c8 --clean -r html -r text node --enable-source-maps --loader=ts-node/esm --test 'test/**/*.ts'",
     "show:coverage": "open-cli coverage/index.html",
-    "lint": "echo linter not configured"
+    "lint": "echo linter not configured",
+    "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
+    "postversion": "git tag -d $(git tag --points-at HEAD)"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,7 @@
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
     "c8": "^8.0.0",
+    "conventional-changelog-cli": "^3.0.0",
     "globstar": "^1.0.0",
     "lefthook": "^1.4.7",
     "open-cli": "^7.2.0",
